@@ -171,16 +171,16 @@ def main():
         for result in st.session_state.results:
             st.subheader("Results")
             if result['url'] != "N/A":
-                st.write(f"URL: {result['url']}")
+                st.write(f"**URL:** {result['url']}")
             if result['title'] != "N/A":
-                st.write(f"Title: {result['title']}")
+                st.write(f"**Title:** {result['title']}")
             if result['authors'] != ["N/A"]:
-                st.write(f"Authors: {', '.join(result['authors'])}")
+                st.write(f"**Authors:** {', '.join(result['authors'])}")
             if result['publish_date'] != "N/A":
-                st.write(f"Publication Date: {result['publish_date']}")
+                st.write(f"**Publication Date:** {result['publish_date']}")
             if result['summary'] != "N/A":
-                st.write(f"Summary: {result['summary']}")
-            st.write(f"Sentiment: {'positive' if result['sentiment'] > 0 else 'negative' if result['sentiment'] < 0 else 'neutral'}")
+                st.write(f"**Summary:** {result['summary']}")
+            st.write(f"**Sentiment:** {'positive' if result['sentiment'] > 0 else 'negative' if result['sentiment'] < 0 else 'neutral'}")
             st.markdown('<hr>', unsafe_allow_html=True)
             st.markdown('</div>', unsafe_allow_html=True)
 

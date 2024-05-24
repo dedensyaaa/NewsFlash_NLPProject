@@ -1,31 +1,12 @@
+test article for "url" option:
+positive
 https://www.philstar.com/lifestyle/fashion-and-beauty/2024/05/23/2357317/filipina-african-american-makes-historic-win-miss-universe-philippines-2024
 
-Cebu
-Talisay City to hold massive sports program
-FREE. Talisay City Mayor Gerald Anthony “Samsam” Gullas Jr., an avid sportsman who regularly competes in basketball, wants children in his city to adopt an active and healthy lifestyle through his free summer sports program. / 
-FREE. Talisay City Mayor Gerald Anthony “Samsam” Gullas Jr., an avid sportsman who regularly competes in basketball, wants children in his city to adopt an active and healthy lifestyle through his free summer sports program. / CONTRIBUTED
-Mike T. Limpag
-Mike T. Limpag
-Published on: 
-May 24, 2024, 9:40 am
-TALISAY City Mayor Gerald Anthony “Samsam” Gullas Jr., an avid sportsman, has announced the resumption of his massive grassroots program designed to get more kids to adopt an active lifestyle and to discover potential athletes among Talisay City residents.
-
-“Our Talisay Summer Sports Clinic started last 2022 after the pandemic. We always believed that conducting a summer sports clinic will have a positive impact on our youth because it will give them a chance to socialize with other children after being on lock down through the camaraderie of sports,” said Gullas.
-
-ADVERTISING
-
-This year, Talisay City will be offering free clinics for taekwondo, arnis, athletics, modern dance, dancesports, basketball, volleyball, swimming, karatedo, table tennis, badminton, football, boxing, chess, and sepak takraw. It will also offer arts, guitar, and voice lessons.
-
-To make sure more kids can join the clinic, the Talisay City Sports Commission will have three batches for this year’s clinic.
-
-“We feel this is important because instead of staying at home, watching TV, browsing the internet, and scrolling on their phones or tables, it is better to engage them in activities like this where they can exercise, learn new skills, and make new friends,” said Gullas.
-
-Gullas said when they started the clinic in 2022, they had 1,233 participants and in 2023, the number grew to 2,012 and he is hoping to have more kids join this year.
-
-“We also created this program to nurture the talents of our Talisaynon children and help them reach their full potential in sports,” he said. / ML
+negative
+https://www.philstar.com/headlines/2024/05/24/2357552/bamban-mayor-alice-guo-can-run-2025-despite-suspension-says-comelec
 
 
-SAMPLE:
+test article for "paste article" option:
 
 Breakthrough in Renewable Energy: Solar Power Efficiency Doubles
 
