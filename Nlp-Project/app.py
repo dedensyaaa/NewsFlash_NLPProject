@@ -13,21 +13,18 @@ from summarizer import Summarizer
 import re
 from datetime import datetime
 
-# Download nltk data
 nltk.download('punkt')
 
-# Function to analyze sentiment
 def analyze_sentiment(text):
     analysis = TextBlob(text)
     return analysis.polarity
 
-# Function to summarize article using BERT Extractive Summarizer
 def summarize_article(text):
     model = Summarizer()
     summary = model(text)
     return summary
 
-# Improved function to extract metadata from text
+# this function to extract metadata from text
 def extract_metadata(text):
     # Split text into lines
     lines = text.split('\n')
@@ -37,21 +34,21 @@ def extract_metadata(text):
     authors = ["N/A"]
     publish_date = "N/A"
     
-    # Extract title (assuming the first line is the title)
+    # Extract title (if first line is title)
     if lines:
         title = lines[0].strip()
     
     # Regular expressions for matching dates and authors
     date_patterns = [
-        r'\b\d{2}/\d{2}/\d{4}\b',  # Matches dates in format DD/MM/YYYY
-        r'\b\d{2}-\d{2}-\d{4}\b',  # Matches dates in format DD-MM-YYYY
-        r'\b\d{4}/\d{2}/\d{2}\b',  # Matches dates in format YYYY/MM/DD
-        r'\b\d{4}-\d{2}-\d{2}\b',  # Matches dates in format YYYY-MM-DD
-        r'\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d{1,2}, \d{4}\b',  # Matches dates like "Jan 1, 2020"
+        r'\b\d{2}/\d{2}/\d{4}\b',  # DD/MM/YYYY
+        r'\b\d{2}-\d{2}-\d{4}\b',  # DD-MM-YYYY
+        r'\b\d{4}/\d{2}/\d{2}\b',  # YYYY/MM/DD
+        r'\b\d{4}-\d{2}-\d{2}\b',  # YYYY-MM-DD
+        r'\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d{1,2}, \d{4}\b',  # "Jan 1, 2020"
     ]
     author_patterns = [
-        r'By ([A-Za-z\s]+)',  # Matches "By John Doe"
-        r'Author: ([A-Za-z\s]+)'  # Matches "Author: John Doe"
+        r'By ([A-Za-z\s]+)',  # Match "By John Doe"
+        r'Author: ([A-Za-z\s]+)'  # Match "Author: John Doe"
         r'By: ([A-Za-z\s]+)'  
     ]
     
